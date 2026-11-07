@@ -89,33 +89,55 @@ display: block;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   font-size: 100px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.3em;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  width: 1000px;
+  height: 385px;
 }
 
+/* Общие стили для всех строк (убираем стандартные отступы) */
 .aligned-text {
+  position: absolute;
   display: block;
+  width: 100%;
 }
 
+/* Строка 1: ОНО */
+.aligned-text_left {
+  top: 0;   /* В Фигме Top: 165px, но так как padding у .cover уже 165px, здесь пишем 0 */
+  left: 0;  /* Left: 50px уже учтен в padding родителя .cover, поэтому здесь 0 */
+  text-align: left;
+}
+
+/* Строка 2: ТЕБЕ */
 .aligned-text_center {
+  top: 135px;       /* 300px (из Фигмы) - 165px (padding) = 135px */
+  left: 350.5px;    /* Точный Left из Фигмы */
+  width: 339px;
   text-align: center;
 }
 
+/* Строка 3: НАДО */
 .aligned-text_right {
+  top: 270px;       /* 435px (из Фигмы) - 165px (padding) = 270px */
+  left: 613px;      /* Точный Left из Фигмы */
+  width: 387px;
   text-align: right;
 }
-/* Описание и кнопка */
 
 .cover__description {
-  position: relative;
+  position: absolute; /* Делаем абсолютное позиционирование, как у заголовка */
+  top: 656px;         /* Отступ сверху из Фигмы */
+  left: 50px;         /* Отступ слева из Фигмы */
+  width: 1000px;      /* Ширина из Фигмы */
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 135px;
 }
 
 .cover__description-text {
@@ -230,7 +252,7 @@ display: block;
   display:grid;
   grid-template-columns: 1fr 2fr;
   gap: 25px;
-  margin: 180px 24px 0;
+  margin: 180px auto 0;
   top: 2073px;
   width: 1052px;
   padding: 35px 0;

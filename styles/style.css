@@ -10,8 +10,8 @@
 
 .header__links-list {
   display: flex;
-  gap: 25px; 
-  list-style: circle; 
+  gap: 25px;
+  list-style: circle;
   padding-left: 20px;
 }
 
@@ -261,8 +261,8 @@ display: block;
 }
 
 .footer__address a {
-  text-decoration: underline; 
-  text-underline-offset: 4px; 
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .footer__address {
@@ -289,7 +289,7 @@ display: block;
 
 .footer__menu-list a {
   font-size: 18px;
-  text-decoration: underline; 
+  text-decoration: underline;
   width: 163,9px;
   height: 64px;
 }

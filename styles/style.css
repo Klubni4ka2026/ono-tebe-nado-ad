@@ -1,4 +1,20 @@
-/* место для вашего кода */
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -51,7 +67,7 @@ display: block;
   
 .cover {
   position: relative;
-  min-height: 757px;
+  height: 757px;
   padding: 165px 50px 50px;
   color: #fff;
   background-image: url("../images/cover.jpg");
@@ -122,6 +138,8 @@ display: block;
 
 .lots {
   margin: 180px 24px 0;
+  top: 1230px;
+  width: 1052px;
 }
 
 .lots__heading {
@@ -137,13 +155,14 @@ display: block;
   flex-wrap: wrap;
   gap: 25px;
   list-style: none;
-  width: 1052px; 
-  margin: 0 auto; 
+  width: 1052px;
+  margin: 0 auto;
 }
 
 .lots__card-list-item {
   flex: 1 1 250px;
   min-height: 450px;
+
 }
 
 .card-link {
@@ -180,6 +199,7 @@ display: block;
 .card__title,
 .card__text {
   position: relative;
+  font-family: 'Raleway', sans-serif;
   z-index: 1;
 }
 
@@ -194,6 +214,8 @@ display: block;
 .card__text {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .lots__look-more-link {
@@ -209,6 +231,8 @@ display: block;
   grid-template-columns: 1fr 2fr;
   gap: 25px;
   margin: 180px 24px 0;
+  top: 2073px;
+  width: 1052px;
   padding: 35px 0;
 }
 

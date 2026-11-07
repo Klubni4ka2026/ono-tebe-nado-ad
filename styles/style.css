@@ -137,6 +137,8 @@ display: block;
   flex-wrap: wrap;
   gap: 25px;
   list-style: none;
+  width: 1052px; 
+  margin: 0 auto; 
 }
 
 .lots__card-list-item {
